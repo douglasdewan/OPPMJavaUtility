@@ -10,7 +10,7 @@ package com.dsdewan.oppmjavautility;
  * @author Doug DeWan
  */
 public class OPPMJavaUtilityEnvironment {
-    private String sUser, sPassword, sServer, sWSLocation;
+    private String sUser, sPassword, sServer, sWSLocation, sCookie;
     private Integer iTimeOut;
     
     public void setUserName(String sUserIn){
@@ -51,5 +51,14 @@ public class OPPMJavaUtilityEnvironment {
     
     public String getWebServiceLocation(){
         return this.sWSLocation;
+    }
+    
+    public void setLoginCookie(String sLoginCookieIn){
+        this.sCookie = sLoginCookieIn;
+        this.sPassword = null;
+    }
+    
+    public String getLoginCookie(){
+        return this.sCookie;
     }
 }
