@@ -10,27 +10,41 @@ package com.dsdewan.oppmjavautility;
  * @author Doug DeWan
  */
 public class PsPortfoliosItemInfo {
-    private String sName, sUCI, sLifeCycle, sStartDate, sEndDate, sDescription;
-    private String sManager, sContainerUCI;
-    private Long lProsightID, lContainerProSightID, lCalculationLevel;
-    private PORTFOLIO_TYPE psPortfolioType;
-    private OPEN_CLOSED_STATUS psOpen_Closed_Status;
+    private String sCommonIdCategory;
+    private String sId;
+    private String sName;
+    private String sLifeCycle;
+    private String sStartDate;
+    private String sEndDate;
+    private String sDescription;
+    private PSOPEN_CLOSED_STATUS psOpen_Closed_Status;
+    private String sManager;
+    private String sContainerId;
+    private PSFIELDS lUpdateFlags;
+    private Long lProsightID;
     private boolean bIsContainerRoot;
     
-    public void setItemName(String sNameIn){
+    public void setCommonIdCategory(String sCommonIdCategoryIn){
+        this.sCommonIdCategory = sCommonIdCategoryIn;
+    }
+    
+    public String getCommonIdCategory(){
+        return this.sCommonIdCategory;
+    }
+    public void setName(String sNameIn){
         this.sName = sNameIn;
     }
     
-    public String getItemName(){
+    public String getName(){
         return this.sName;
     }
     
-    public void setUCI(String sUCIIn){
-        this.sUCI = sUCIIn;
+    public void setId(String sIdIn){
+        this.sId = sIdIn;
     }
     
-    public String getUCI(){
-        return this.sUCI;
+    public String getId(){
+        return this.sId;
     }
     
     public void setLifeCycle(String sLifeCycleIn){
@@ -73,11 +87,11 @@ public class PsPortfoliosItemInfo {
         return this.sManager;
     }
     
-    public void setContainerUCI(String sContainerUCIIn){
-        this.sContainerUCI = sContainerUCIIn;
+    public void setContainerId(String sContainerIdIn){
+        this.sContainerId = sContainerIdIn;
     }
     
-    public String getContainerUCI(){
-        return this.sContainerUCI;
+    public String getContainerId(){
+        return this.sContainerId;
     }
 }
