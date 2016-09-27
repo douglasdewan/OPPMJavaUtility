@@ -15,7 +15,7 @@ public enum PSCELL_UPDATE_FIELD {
     CFLD_ANNOTATION(4),
     CFLD_ALL(7);
     
-    private Integer iCellUpdateFieldValue;
+    private final Integer iCellUpdateFieldValue;
     
     private PSCELL_UPDATE_FIELD(Integer iCellUpdateFieldValueIn){
         this.iCellUpdateFieldValue = iCellUpdateFieldValueIn;

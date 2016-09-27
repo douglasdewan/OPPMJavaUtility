@@ -9,17 +9,16 @@ package com.dsdewan.oppmjavautility;
  *
  * @author Doug DeWan
  */
-public enum PSOPEN_CLOSED_STATUS {
-    OCSTS_NONE(0),
-    OCSTS_OPEN(1), 
-    OCSTS_CLOSED(2), 
-    OCSTS_CANDIDATE(3);
+public enum PSDATA_SOURCE {
+    DSRC_NONE(0),
+    DSRC_MANUAL(1),
+    DSRC_CALCULATED(2),
+    DSRC_IMPORTED(3);
     
-    private final Integer iStatusValue;
+    private final Integer iDataSourceValue;
     
-    private PSOPEN_CLOSED_STATUS(Integer iStatusValueIn){
-        this.iStatusValue = iStatusValueIn;
+    private PSDATA_SOURCE(Integer iDataSourceValueIn){
+        this.iDataSourceValue = iDataSourceValueIn;
     }
 
-    
 }

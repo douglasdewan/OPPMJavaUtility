@@ -14,7 +14,7 @@ public enum PSCELL_PART {
     CPRT_VALUE(0),
     CPRT_INDICATOR_COLOR(2);
     
-    private Integer iCellPartValue;
+    private final Integer iCellPartValue;
     
     private PSCELL_PART(Integer iCellPartValueIn){
         this.iCellPartValue = iCellPartValueIn;

@@ -23,6 +23,7 @@ public class OPPMJavaUtility {
         
         oppmWSEnvs.setUserName("admin");
         oppmWSEnvs.setPassword("");
+        
         oppmWSEnvs.setTimeOut(600);
         oppmWSEnvs.setServer("http://oppm");
         oppmWSEnvs.setWebServiceLocation("/prosightWS");

@@ -9,17 +9,15 @@ package com.dsdewan.oppmjavautility;
  *
  * @author Doug DeWan
  */
-public enum PSOPEN_CLOSED_STATUS {
-    OCSTS_NONE(0),
-    OCSTS_OPEN(1), 
-    OCSTS_CLOSED(2), 
-    OCSTS_CANDIDATE(3);
+public enum PSITEM_TYPE {
+    ITYP_NONE(0),
+    ITYP_ITEM(1),
+    ITYP_PORTFOLIO_OF_ITEMS(2),
+    ITYP_PORTFOLIO_OF_PORTFOLIOS(3);
     
-    private final Integer iStatusValue;
+    private final Integer iItemTypeValue;
     
-    private PSOPEN_CLOSED_STATUS(Integer iStatusValueIn){
-        this.iStatusValue = iStatusValueIn;
+    private PSITEM_TYPE(Integer iItemTypeValueIn){
+        this.iItemTypeValue = iItemTypeValueIn;
     }
-
-    
 }

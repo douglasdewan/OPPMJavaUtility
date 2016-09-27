@@ -18,7 +18,7 @@ public enum PSCATEGORY_VALUE_TYPE {
     CVTYP_VALUELIST(6), 
     CVTYP_USER(7);
 
-    private Integer iCategoryValueType;
+    private final Integer iCategoryValueType;
 
     private PSCATEGORY_VALUE_TYPE(Integer iCategoryValueTypeIn){
         this.iCategoryValueType = iCategoryValueTypeIn;
