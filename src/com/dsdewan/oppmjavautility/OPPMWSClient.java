@@ -23,7 +23,6 @@ import javax.xml.soap.SOAPPart;
 /**
  *
  * @author Doug DeWan
- * 
  */
 
 public class OPPMWSClient {
